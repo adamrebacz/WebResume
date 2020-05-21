@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NIvz5WJS6bMvb7BalO6MytnD/xTw44MYYDgqwK52+VH3sNjjymIvlKoh7Xhe/eTPPPXHDPx/sEXMyvDhLiuvKQ==",
+  "dgSpecHash": "oW9aGZBujK8VIahIOw1VHDco9qZ2QvuncE1KrLhp7iY3fhdMDbJrLJODwBjmTalVgb/AHIcyZjuJav7yV1dc1Q==",
   "success": true,
-  "projectFilePath": "/Users/przemyslawrebacz/Projects/WebResume/WebResume.MVC/WebResume.MVC.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.MVC/WebResume.MVC.csproj",
+  "expectedPackageFiles": [
+    "/Users/przemyslawrebacz/.nuget/packages/bootstrap/4.5.0/bootstrap.4.5.0.nupkg.sha512",
+    "/Users/przemyslawrebacz/.nuget/packages/jquery/3.0.0/jquery.3.0.0.nupkg.sha512",
+    "/Users/przemyslawrebacz/.nuget/packages/popper.js/1.16.0/popper.js.1.16.0.nupkg.sha512"
+  ],
   "logs": []
 }
