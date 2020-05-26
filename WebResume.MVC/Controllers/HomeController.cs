@@ -23,6 +23,16 @@ namespace WebResume.MVC.Controllers
             return View();
         }
 
+        public IActionResult Menu1()
+        {
+            return View();
+        }
+
+        public IActionResult Menu2()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
