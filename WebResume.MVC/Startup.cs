@@ -1,13 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Reflection;
+using WebResume.Auth;
+using WebResume.Auth.Extensions;
+using WebResume.Auth.Graph;
 
 namespace WebResume.MVC
 {
@@ -24,6 +31,61 @@ namespace WebResume.MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            /*
+             * Authentication Section
+            */
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            services.AddAuthentication(sharedOptions =>
+            {
+                sharedOptions.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                sharedOptions.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                sharedOptions.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            })
+            .AddAzureAd(options => Configuration.Bind("AzureAd", options))
+            .AddCookie(options => {
+                options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Error/AccessDenied");
+            });
+
+            services.AddMvc(options => options.EnableEndpointRouting = false)
+                .AddWebApiConventions()
+                .AddApplicationPart(Assembly.Load("WebResume.Auth"))
+                .AddControllersAsServices();
+
+            services.AddSession();
+
+            services.AddSingleton<IGraphAuthProvider, GraphAuthProvider>();
+            services.AddTransient<IGraphSdkHelper, GraphSdkHelper>();
+
+            services.AddControllersWithViews(options =>
+            {
+                //var policy = new AuthorizationPolicyBuilder()
+                //    //.RequireAuthenticatedUser().RequireClaim("groups", new string[]{
+                //    ////Configuration.GetValue<string>("Groups:AdminGroup"),
+                //    ////Configuration.GetValue<string>("Groups:UserGroup")})
+                //    //"22972484-b1f8-466c-9767-ef4efbac5a00",
+                //    //"e4391d60-4cd4-45b7-9678-bb09eedf1600"})
+                //    .Build();
+                //options.Filters.Add(new AuthorizeFilter(policy));
+
+            });
+
+            services.Configure<HstsOptions>(options =>
+            {
+                options.IncludeSubDomains = true;
+                options.MaxAge = TimeSpan.FromDays(365);
+            });
+
+            /*
+             * DB Section
+            */
+
+
             services.AddControllersWithViews();
         }
 
@@ -42,10 +104,11 @@ namespace WebResume.MVC
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCookiePolicy();
+            app.UseSession();
             app.UseRouting();
-
-            app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();//
 
             app.UseEndpoints(endpoints =>
             {
