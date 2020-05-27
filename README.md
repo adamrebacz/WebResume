@@ -17,3 +17,5 @@ A web based resume site strictly dedicated for my achievements, work history, my
 ### User Functionality
 * Commenting on the entire site
 * Commenting on specific photo
+## Update 26.05.2020
+* Added basic code for MSAL Azure AD authentication for Admin account
