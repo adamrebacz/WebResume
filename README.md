@@ -2,7 +2,7 @@
 A web based resume site strictly dedicated for my achievements, work history, my motivations and other stuff that keeps me interesting.
 ## Requirements
 * MVC .NET Core 3.1 Application in Visual Studio 2019 Comunity Edition
-* [Azure Sit Link](https://#/)
+* [Azure Sit Link](https://about-me.azurewebsites.net)
 * Entity Framework with SQL on Azure portal
 * DevOps for CI/CD
 * Admin logins - everybody who is a part of Admin Group in my Azure AD
@@ -26,3 +26,7 @@ A web based resume site strictly dedicated for my achievements, work history, my
 * Added EF to project and DB Context wirh connection string to Azure SQL Server
 * Created Initial Migration and First Database Table [MS Doc link](https://docs.microsoft.com/en-us/ef/core/get-started/?tabs=netcore-cli)
 * Downloaded and the Azure Data Studio for Mac for DB Connections [Link](https://github.com/microsoft/azuredatastudio)
+### Azure
+* Created App Service [Site](https://about-me.azurewebsites.net)
+* Created Azure App Registry
+* Created Azure Resource group
