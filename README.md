@@ -30,3 +30,5 @@ A web based resume site strictly dedicated for my achievements, work history, my
 * Created App Service [Site](https://about-me.azurewebsites.net)
 * Created Azure App Registry
 * Created Azure Resource group
+### DevOps
+* Created Continous Integration Build Pipline Visual Studio -> GitHub -> DevOps build PipeLine
