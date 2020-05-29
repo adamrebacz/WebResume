@@ -31,10 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebResume.Auth\WebResume.Auth.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\WebResume.Models\WebResume.Models.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
 </Project>
