@@ -1,0 +1,8 @@
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/bin/Debug/netcoreapp3.1/WebResume.Models.deps.json
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/bin/Debug/netcoreapp3.1/WebResume.Models.dll
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/bin/Debug/netcoreapp3.1/WebResume.Models.pdb
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.AssemblyInfoInputs.cache
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.AssemblyInfo.cs
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.csproj.CoreCompileInputs.cache
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.dll
+/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.pdb

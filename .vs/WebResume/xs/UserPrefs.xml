@@ -1,0 +1,25 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{AC2908F4-2B17-41E5-905F-784AC3EA3BFE}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="WebResume.MVC/WebResume.MVC.csproj" Line="35" Column="77" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebResume" expanded="True" selected="True">
+            <Node name="WebResume.Models" expanded="True" />
+            <Node name="WebResume.MVC" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebResume.MVC PreferredExecutionTarget="/Applications/Opera.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
