@@ -1,14 +1,21 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{AC2908F4-2B17-41E5-905F-784AC3EA3BFE}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebResume.MVC/wwwroot/css/menu.css">
     <Files>
       <File FileName="WebResume.MVC/WebResume.MVC.csproj" Line="35" Column="77" />
+      <File FileName="WebResume.MVC/wwwroot/css/menu.css" Line="83" Column="63" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="WebResume" expanded="True" selected="True">
+          <Node name="WebResume" expanded="True">
             <Node name="WebResume.Models" expanded="True" />
-            <Node name="WebResume.MVC" expanded="True" />
+            <Node name="WebResume.MVC" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="menu.css" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
