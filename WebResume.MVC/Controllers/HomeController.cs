@@ -10,7 +10,7 @@ using WebResume.MVC.Models;
 
 namespace WebResume.MVC.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
