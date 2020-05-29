@@ -19,3 +19,9 @@ A web based resume site strictly dedicated for my achievements, work history, my
 * Commenting on specific photo
 ## Update 26.05.2020
 * Added basic code for MSAL Azure AD authentication for Admin account
+## Update 28.05.2020
+### EntityFramework
+* Created Azure SQL Server
+* Added EF to project and DB Context wirh connection string to Azure SQL Server
+* Created Initial Migration and First Database Table [MS Doc link](https://docs.microsoft.com/en-us/ef/core/get-started/?tabs=netcore-cli)
+* Downloaded and the Azure Data Studio for Mac for DB Connections [Link](https://github.com/microsoft/azuredatastudio)
