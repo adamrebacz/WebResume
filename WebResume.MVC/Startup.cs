@@ -15,6 +15,13 @@ using System.Reflection;
 using WebResume.Auth;
 using WebResume.Auth.Extensions;
 using WebResume.Auth.Graph;
+//using WebResume.DataAccess;
+//using WebResume.MVC.DataAccess.MVC.Repository;
+//using WebResume.DataAccess.MVC.Repository.IRepository;
+using Microsoft.EntityFrameworkCore;
+using WebResume.DataAccess.MVC.Repository.IRepository;
+using WebResume.DataAccess.MVC.Repository;
+using WebResume.DataAccess.MVC;
 
 namespace WebResume.MVC
 {
@@ -31,9 +38,9 @@ namespace WebResume.MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            /*
+            /*****************************************************************************
              * Authentication Section
-            */
+            ******************************************************************************/
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -81,12 +88,21 @@ namespace WebResume.MVC
                 options.MaxAge = TimeSpan.FromDays(365);
             });
 
-            /*
+            /*****************************************************************************
              * DB Section
-            */
+            *****************************************************************************/
+            services.AddDbContext<WRDbContext>(options =>
+                //options.UseSqlServer(
+                //    Configuration.GetConnectionString("DefaultConnection"), db =>
+                //    db.MigrationsAssembly("WebResume.DataAccess")
+                //    ));
+                        options.UseSqlServer(
+                Configuration.GetConnectionString("DefaultConnection")
+                ));
 
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
-            services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -108,7 +124,7 @@ namespace WebResume.MVC
             app.UseSession();
             app.UseRouting();
             app.UseAuthentication();
-            app.UseAuthorization();//
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
