@@ -154,7 +154,13 @@
       <Link>wwwroot/js/bootstrap.min.js.map</Link>
     </Content>
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/3.1.4/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/3.1.4/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)entityframework/6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework/6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/Users/przemyslawrebacz/.nuget/packages/microsoft.entityframeworkcore.tools/3.1.4</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">/Users/przemyslawrebacz/.nuget/packages/jquery/3.0.0</PkgjQuery>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">/Users/przemyslawrebacz/.nuget/packages/entityframework/6.4.4</PkgEntityFramework>
   </PropertyGroup>
 </Project>
