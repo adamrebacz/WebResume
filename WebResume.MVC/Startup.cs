@@ -19,9 +19,9 @@ using WebResume.Auth.Graph;
 //using WebResume.MVC.DataAccess.MVC.Repository;
 //using WebResume.DataAccess.MVC.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
-using WebResume.DataAccess.MVC.Repository.IRepository;
-using WebResume.DataAccess.MVC.Repository;
-using WebResume.DataAccess.MVC;
+using WebResume.MVC.DataAccess.Repository.IRepository;
+using WebResume.MVC.DataAccess.Repository;
+using WebResume.MVC.DataAccess;
 
 namespace WebResume.MVC
 {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace WebResume.DataAccess.MVC.Repository.IRepository
+namespace WebResume.MVC.DataAccess.Repository.IRepository
 {
     public interface IUnitOfWork : IDisposable
     {

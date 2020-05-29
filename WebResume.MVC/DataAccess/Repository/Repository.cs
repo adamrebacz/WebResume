@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using WebResume.DataAccess.MVC.Repository.IRepository;
+using WebResume.MVC.DataAccess.Repository.IRepository;
 
-namespace WebResume.DataAccess.MVC.Repository
+namespace WebResume.MVC.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

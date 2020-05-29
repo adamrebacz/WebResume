@@ -1,7 +1,7 @@
 ﻿
 using WebResume.Models;
 
-namespace WebResume.DataAccess.MVC.Repository.IRepository
+namespace WebResume.MVC.DataAccess.Repository.IRepository
 {
     public interface ISectionRepository : IRepository<Section>
     {

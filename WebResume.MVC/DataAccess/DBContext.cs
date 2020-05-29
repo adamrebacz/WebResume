@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebResume.Models;
 
-namespace WebResume.DataAccess.MVC
+namespace WebResume.MVC.DataAccess
 {
     public class WRDbContext : IdentityDbContext
     {

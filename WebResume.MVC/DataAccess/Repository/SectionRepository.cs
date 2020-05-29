@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using WebResume.DataAccess.MVC.Repository.IRepository;
+using WebResume.MVC.DataAccess.Repository.IRepository;
 using WebResume.Models;
 
-namespace WebResume.DataAccess.MVC.Repository
+namespace WebResume.MVC.DataAccess.Repository
 {
     public class SectionRepository : Repository<Section>, ISectionRepository
     {
