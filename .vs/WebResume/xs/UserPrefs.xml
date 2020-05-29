@@ -1,8 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{AC2908F4-2B17-41E5-905F-784AC3EA3BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebResume.MVC/wwwroot/css/menu.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebResume.MVC/Program.cs">
     <Files>
       <File FileName="WebResume.MVC/WebResume.MVC.csproj" Line="35" Column="77" />
-      <File FileName="WebResume.MVC/wwwroot/css/menu.css" Line="83" Column="63" />
+      <File FileName="WebResume.MVC/wwwroot/css/menu.css" Line="83" Column="158" />
+      <File FileName="WebResume.MVC/appsettings.Development.json" Line="19" Column="49" />
+      <File FileName="WebResume.MVC/Program.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,10 +13,10 @@
             <Node name="WebResume.Models" expanded="True" />
             <Node name="WebResume.MVC" expanded="True">
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="menu.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
               </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -22,7 +24,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WebResume.MVC PreferredExecutionTarget="/Applications/Opera.app" />
+  <MonoDevelop.Ide.ItemProperties.WebResume.MVC PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
