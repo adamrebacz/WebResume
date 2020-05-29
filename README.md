@@ -1,3 +1,5 @@
+[![Build status](https://dev.azure.com/pierozek/Resume/_apis/build/status/Resume-ASP.NET%20Core-CI)](https://dev.azure.com/pierozek/Resume/_build/latest?definitionId=1)
+
 # WebResume
 A web based resume site strictly dedicated for my achievements, work history, my motivations and other stuff that keeps me interesting.
 ## Requirements
