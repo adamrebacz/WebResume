@@ -9182,34 +9182,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/przemyslawrebacz/.nuget/packages/": {}
+    "C:\\Users\\FEPC-815\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.MVC/WebResume.MVC.csproj",
+      "projectUniqueName": "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.MVC\\WebResume.MVC.csproj",
       "projectName": "WebResume.MVC",
-      "projectPath": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.MVC/WebResume.MVC.csproj",
-      "packagesPath": "/Users/przemyslawrebacz/.nuget/packages/",
-      "outputPath": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.MVC/obj/",
+      "projectPath": "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.MVC\\WebResume.MVC.csproj",
+      "packagesPath": "C:\\Users\\FEPC-815\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/przemyslawrebacz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\FEPC-815\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Auth/WebResume.Auth.csproj": {
-              "projectPath": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Auth/WebResume.Auth.csproj"
+            "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.Auth\\WebResume.Auth.csproj": {
+              "projectPath": "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.Auth\\WebResume.Auth.csproj"
             },
-            "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/WebResume.Models.csproj": {
-              "projectPath": "/Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/WebResume.Models.csproj"
+            "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.Models\\WebResume.Models.csproj": {
+              "projectPath": "D:\\OneDrive\\OneDrive - Farmer's Edge Inc\\Documents\\GitHub\\WebResume\\WebResume.Models\\WebResume.Models.csproj"
             }
           }
         }
@@ -9278,7 +9284,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
