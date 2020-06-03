@@ -36,3 +36,10 @@ A web based resume site strictly dedicated for my achievements, work history, my
 ### DevOps
 * Created Continous Integration Build Pipline: Visual Studio -> GitHub -> DevOps build PipeLine
 * Created Continous Deployment Release Pipeline: DevOps Build -> Release PipeLine -> Azure App Service
+## Update 02.06.2020
+### MVC
+* Created an async ajax CRUD operations for Section column
+** List all elements from DB
+** Add new element
+** Delete selected element
+** Edit element
