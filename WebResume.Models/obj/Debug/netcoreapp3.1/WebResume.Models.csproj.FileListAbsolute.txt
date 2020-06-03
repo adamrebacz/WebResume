@@ -6,3 +6,12 @@
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.csproj.CoreCompileInputs.cache
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.dll
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Models/obj/Debug/netcoreapp3.1/WebResume.Models.pdb
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\bin\Debug\netcoreapp3.1\WebResume.Models.deps.json
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\bin\Debug\netcoreapp3.1\WebResume.Models.dll
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\bin\Debug\netcoreapp3.1\WebResume.Models.pdb
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.csprojAssemblyReference.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.AssemblyInfo.cs
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.dll
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Models\obj\Debug\netcoreapp3.1\WebResume.Models.pdb

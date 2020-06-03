@@ -6,3 +6,12 @@
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Auth/obj/Debug/netcoreapp3.1/WebResume.Auth.csproj.CoreCompileInputs.cache
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Auth/obj/Debug/netcoreapp3.1/WebResume.Auth.dll
 /Users/przemyslawrebacz/Documents/GitHub/WebResume/WebResume.Auth/obj/Debug/netcoreapp3.1/WebResume.Auth.pdb
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\bin\Debug\netcoreapp3.1\WebResume.Auth.deps.json
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\bin\Debug\netcoreapp3.1\WebResume.Auth.dll
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\bin\Debug\netcoreapp3.1\WebResume.Auth.pdb
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.csprojAssemblyReference.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.AssemblyInfo.cs
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.dll
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.Auth\obj\Debug\netcoreapp3.1\WebResume.Auth.pdb

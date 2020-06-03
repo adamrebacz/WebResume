@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using WebResume.MVC.DataAccess.Repository.IRepository;
 
 namespace WebResume.MVC.DataAccess.Repository
@@ -41,6 +42,21 @@ namespace WebResume.MVC.DataAccess.Repository
             if (orderBy != null)
                 return orderBy(query).ToList<T>();
             return query.ToList<T>();
+        }
+
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
+        {
+            IQueryable<T> query = dbSet;
+            if (filter != null)
+                query = query.Where(filter);
+
+            if (!string.IsNullOrEmpty(includeProperties))
+                foreach (string includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                    query = query.Include(includeProperty);
+
+            if (orderBy != null)
+                return await orderBy(query).ToListAsync<T>();
+            return await query.ToListAsync<T>();
         }
 
         public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)

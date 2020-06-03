@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace WebResume.MVC.DataAccess.Repository.IRepository
 {
@@ -10,6 +11,12 @@ namespace WebResume.MVC.DataAccess.Repository.IRepository
         T Get(int id);
 
         IEnumerable<T> GetAll(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string includeProperties = null
+            );
+
+        Task<IEnumerable<T>> GetAllAsync(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = null
