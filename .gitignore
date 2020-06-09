@@ -354,3 +354,8 @@ appsettings.Development.json
 .Development.json
 *appsettings.Development.json
 *.Development.json
+appsettings.Local.json
+.Local.json
+*appsettings.Local.json
+*.Local.json
+WebResume.MVC/appsettings.Development.json
