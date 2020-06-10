@@ -1,6 +1,5 @@
 [![Build status](https://dev.azure.com/pierozek/Resume/_apis/build/status/Resume-ASP.NET%20Core-CI)](https://dev.azure.com/pierozek/Resume/_build/latest?definitionId=1)
-[![Deploy status](https://vsrm.dev.azure.com/pierozek/_apis/public/Release/badge/daf0aa42-c1fa-4e1a-9fcb-c23f7e4a52b1/1/1)]
-(https://vsrm.dev.azure.com/pierozek/_apis/public/Release/badge/daf0aa42-c1fa-4e1a-9fcb-c23f7e4a52b1/1/1)
+![](https://vsrm.dev.azure.com/pierozek/_apis/public/Release/badge/daf0aa42-c1fa-4e1a-9fcb-c23f7e4a52b1/1/1)
 
 # WebResume
 A web based resume site strictly dedicated for my achievements, work history, my motivations and other stuff that keeps me interesting.
