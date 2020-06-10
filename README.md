@@ -41,3 +41,8 @@ A web based resume site strictly dedicated for my achievements, work history, my
 ### MVC
 * Created administration controller with administration views and partial views
 * Created an async ajax CRUD operations for Section column (List all elements from DB, Add new element, Delete selected element, Edit element)
+## Update 09.06.2020
+### MVC
+* Created DATE ITEM Model
+* Created STRING ITEM Model
+* Created SECTION DESCRIPTION Model
