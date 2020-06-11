@@ -1,4 +1,5 @@
 [![Build status](https://dev.azure.com/pierozek/Resume/_apis/build/status/Resume-ASP.NET%20Core-CI)](https://dev.azure.com/pierozek/Resume/_build/latest?definitionId=1)
+![](https://vsrm.dev.azure.com/pierozek/_apis/public/Release/badge/daf0aa42-c1fa-4e1a-9fcb-c23f7e4a52b1/1/1)
 
 # WebResume
 A web based resume site strictly dedicated for my achievements, work history, my motivations and other stuff that keeps me interesting.
@@ -40,3 +41,8 @@ A web based resume site strictly dedicated for my achievements, work history, my
 ### MVC
 * Created administration controller with administration views and partial views
 * Created an async ajax CRUD operations for Section column (List all elements from DB, Add new element, Delete selected element, Edit element)
+## Update 09.06.2020
+### MVC
+* Created DATE ITEM Model
+* Created STRING ITEM Model
+* Created SECTION DESCRIPTION Model
