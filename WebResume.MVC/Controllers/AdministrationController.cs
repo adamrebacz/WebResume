@@ -13,6 +13,7 @@ using WebResume.MVC.DataAccess.Repository.IRepository;
 namespace WebResume.MVC.Controllers
 {
     //[Authorize]
+    [AllowAnonymous]
     public class AdministrationController : Controller
     {
         private readonly ILogger<AdministrationController> _logger;
@@ -44,6 +45,7 @@ namespace WebResume.MVC.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAllSections()
         {
             return Json(new
