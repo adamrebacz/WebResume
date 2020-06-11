@@ -29,6 +29,11 @@ namespace WebResume.MVC.DataAccess.Repository
             return dbSet.Find(id);
         }
 
+        public async Task<T> GetAsync(int id)
+        {
+            return await dbSet.FindAsync(id);
+        }
+
         public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
         {
             IQueryable<T> query = dbSet;
@@ -74,7 +79,7 @@ namespace WebResume.MVC.DataAccess.Repository
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            dbSet.Remove(Get(id));
         }
 
         public void Remove(T entity)

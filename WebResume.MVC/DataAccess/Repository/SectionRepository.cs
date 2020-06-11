@@ -1,6 +1,8 @@
 ﻿using System.Linq;
 using WebResume.MVC.DataAccess.Repository.IRepository;
 using WebResume.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace WebResume.MVC.DataAccess.Repository
 {
@@ -15,12 +17,18 @@ namespace WebResume.MVC.DataAccess.Repository
 
         public void Update(Section section)
         {
-            var objFromDB = _db.Sections.SingleOrDefault(p => p.Id == section.Id);
-
-            //objFromDB.Justification = permision.Justification;
-            //...
-
-            _db.SaveChanges();
+            throw new System.NotImplementedException();
         }
+
+        public async Task UpdateAsync(Section section)
+        {
+            var objFromDB = await _db.Sections.SingleOrDefaultAsync(p => p.Id == section.Id);
+
+            objFromDB.Name = section.Name;
+            objFromDB.Visible = section.Visible;
+
+            await _db.SaveChangesAsync();
+        }
+
     }
 }

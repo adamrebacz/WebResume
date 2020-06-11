@@ -215,6 +215,36 @@ namespace WebResume.MVC.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("WebResume.Models.DateItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateStart")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SectionId");
+
+                    b.ToTable("DateItems");
+                });
+
             modelBuilder.Entity("WebResume.Models.Section", b =>
                 {
                     b.Property<int>("Id")
@@ -229,9 +259,54 @@ namespace WebResume.MVC.Migrations
                     b.Property<bool>("Visible")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("sectionDescriptionId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("sectionDescriptionId");
+
                     b.ToTable("Sections");
+                });
+
+            modelBuilder.Entity("WebResume.Models.SectionDescription", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SectionDescriptions");
+                });
+
+            modelBuilder.Entity("WebResume.Models.StringItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SectionId");
+
+                    b.ToTable("StringItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -283,6 +358,27 @@ namespace WebResume.MVC.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("WebResume.Models.DateItem", b =>
+                {
+                    b.HasOne("WebResume.Models.Section", null)
+                        .WithMany("dateTimes")
+                        .HasForeignKey("SectionId");
+                });
+
+            modelBuilder.Entity("WebResume.Models.Section", b =>
+                {
+                    b.HasOne("WebResume.Models.SectionDescription", "sectionDescription")
+                        .WithMany()
+                        .HasForeignKey("sectionDescriptionId");
+                });
+
+            modelBuilder.Entity("WebResume.Models.StringItem", b =>
+                {
+                    b.HasOne("WebResume.Models.Section", null)
+                        .WithMany("stringTimes")
+                        .HasForeignKey("SectionId");
                 });
 #pragma warning restore 612, 618
         }

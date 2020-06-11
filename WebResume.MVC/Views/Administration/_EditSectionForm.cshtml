@@ -1,0 +1,28 @@
+﻿@model WebResume.Models.Section
+
+<form id="SectionForm" method="POST">
+    <div class="text-danger"></div>
+    <input id="SectionId" type="hidden" asp-for="@Model.Id" />
+
+    <div class="form-group row">
+        <label asp-for="@Model.Name" class="col-3 col-form-label" for="SectionName"></label>
+        <div class="col-8">
+            <input id="SectionName" asp-for="@Model.Name" name="SectionName" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="SectionSelect">Visibility</label>
+        <div class="col-8">
+            <select id="SectionSelect" name="SectionSelect" class="custom-select" asp-for="@Model.Visible">
+                <option value="true">Show</option>
+                <option value="false">Hide</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="offset-3 col-9">
+            <input type="button" id="btnSectionUpdateConfirm" value="Save" class="btn btn-info">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</form>

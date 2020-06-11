@@ -52,44 +52,76 @@ namespace WebResume.MVC.Controllers
             });
         }
 
+        public async Task<IActionResult> RemoveSection(int id)
+        {
+            Section section = await _unitOfWOrk.Section.GetAsync(id);
+            return PartialView("_DeleteSectionForm", section);
+        }
+
         [HttpPost]
-        public IActionResult DeleteSection([FromBody]string sectionId)
+        public async Task<IActionResult> DeleteSection([FromBody]string sectionId)
         {
             if (!string.IsNullOrEmpty(sectionId))
             {
                 int value = int.Parse(sectionId);
                 _unitOfWOrk.Section.Remove(value);
-                _unitOfWOrk.Save();
+                await _unitOfWOrk.SaveAsync();
+
                 return Json(new { message = "OK" });
             }
             return Json(new { message = "ERROR" });
         }
 
-        public async Task<IActionResult> AddSection(int id)
+        public async Task<IActionResult> EditSection(int id)
+        {
+            Section section = await _unitOfWOrk.Section.GetAsync(id);
+            return PartialView("_EditSectionForm", section);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateSection([FromBody]Section _section)
+        {
+            if (ModelState.IsValid)
+            {
+                await _unitOfWOrk.Section.UpdateAsync(_section);
+                return Json(new { message = "OK" });
+            }
+            //if (!string.IsNullOrEmpty(sectionId))
+            //{
+            //    int value = int.Parse(sectionId);
+            //    _unitOfWOrk.Section.Remove(value);
+            //    await _unitOfWOrk.SaveAsync();
+
+            //    
+            //}
+            return Json(new { message = "ERROR" });
+        }
+
+        public IActionResult AddSection(int id)
         {
             Section section = new Section();
             return PartialView("_SectionForm");
         }
 
         [HttpPost]
-        public async Task<string> CreateSection([FromBody]Section data)
+        public async Task<IActionResult> CreateSection([FromBody]Section data)
         {
             if (ModelState.IsValid)
             {
                 data.Visible = true;
 
                 _unitOfWOrk.Section.Add(data);
-                _unitOfWOrk.Save();
+                await _unitOfWOrk.SaveAsync();
 
-                var successMessage = "Section Created Successfully.";
-                TempData["successAlert"] = successMessage;
-                return "Section Created Successfully";
+                return Json(new { message = "OK" });
             }
-            //}
-            return "Failed";
+            return Json(new { message = "ERROR" });
         }
 
         #endregion
 
+        #region Date Item
+
+        #endregion
     }
 }

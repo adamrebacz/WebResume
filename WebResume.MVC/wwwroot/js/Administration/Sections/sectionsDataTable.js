@@ -29,8 +29,8 @@ function loadDataTable() {
                 { "data": "visible", "name": "visible", "autoWidth": true },
                 {
                     data: null, render: function (data, type, row) {
-                        return "<div><a href='#' class='fe-edit' onclick=EditPermission('" + row.id + "');>edit<i class='fa fa-pencil'></i></a></div>" +
-                            "<div><a href='#' class='fe-remove' onclick=DeletePermission('" + row.id + "');>delete<i class='fa fa-remove'></i></a></div>";
+                        return "<div><a href='#' class='fe-edit' onclick=EditSection('" + row.id + "');>edit<i class='fa fa-pencil'></i></a></div>" +
+                            "<div><a href='#' class='fe-remove' onclick=DeleteSection('" + row.id + "');>delete<i class='fa fa-remove'></i></a></div>";
                     }
                 }
 
@@ -40,7 +40,18 @@ function loadDataTable() {
         "lengthMenu": [[10, 15, 25, 50, 100, 200], [10, 15, 25, 50, 100, 200]],
         "language":
         {
-            "emptyTable": "There are no categories to display at the moment."
+            "emptyTable": "There are no Sections to display at the moment."
         }
     });
 }
+
+function EditSection(id) {
+    var url = "/Administration/EditSection?id=" + id;
+    $('#title').html("Edit Section");
+
+    $("#SectionFormModalDiv").load(url, function () {
+        $("#SectionFormModal").modal("show");
+
+    });
+}
+

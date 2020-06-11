@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
 using Microsoft.Graph;
 using WebResume.Auth.Extensions;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebResume.Auth.Graph
 {
@@ -12,7 +13,7 @@ namespace WebResume.Auth.Graph
         private IConfidentialClientApplication _app;
         private readonly string[] _scopes;
 
-        public GraphAuthProvider(IConfiguration configuration)
+        public GraphAuthProvider([FromServices]IConfiguration configuration)
         {
             var azureOptions = new AzureAdOptions();
             configuration.Bind("AzureAd", azureOptions);

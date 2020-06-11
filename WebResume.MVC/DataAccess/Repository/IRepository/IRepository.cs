@@ -10,6 +10,8 @@ namespace WebResume.MVC.DataAccess.Repository.IRepository
     {
         T Get(int id);
 
+        Task<T> GetAsync(int id);
+
         IEnumerable<T> GetAll(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,

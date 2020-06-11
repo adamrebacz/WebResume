@@ -112,8 +112,6 @@ D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MV
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\WebResume.MVC.pdb
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\WebResume.MVC.Views.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\WebResume.MVC.Views.pdb
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\EntityFramework.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -154,10 +152,8 @@ D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MV
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.CodeDom.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
@@ -167,8 +163,6 @@ D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MV
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
@@ -285,3 +279,6 @@ D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MV
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Administration\_LayoutScripts.cshtml.g.cs
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Administration\_SectionAddModal.cshtml.g.cs
 D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Administration\_SectionForm.cshtml.g.cs
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\bin\Debug\netcoreapp3.1\appsettings.Local.json
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Administration\_DeleteSectionForm.cshtml.g.cs
+D:\OneDrive\OneDrive - Farmer's Edge Inc\Documents\GitHub\WebResume\WebResume.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Administration\_EditSectionForm.cshtml.g.cs

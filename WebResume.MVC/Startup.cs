@@ -22,15 +22,28 @@ using Microsoft.EntityFrameworkCore;
 using WebResume.MVC.DataAccess.Repository.IRepository;
 using WebResume.MVC.DataAccess.Repository;
 using WebResume.MVC.DataAccess;
+using System.IO;
 
 namespace WebResume.MVC
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
         {
-            Configuration = configuration;
-            //
+            if (env.IsDevelopment())
+            {
+                Configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", false)
+                .AddJsonFile("appsettings.Development.json", optional: true)
+                .AddJsonFile("appsettings.Local.json", optional: true)
+                .AddEnvironmentVariables()
+                .Build();
+            }
+            else
+            {
+                Configuration = configuration;
+            }
         }
 
         public IConfiguration Configuration { get; }
@@ -96,8 +109,8 @@ namespace WebResume.MVC
                 //    Configuration.GetConnectionString("DefaultConnection"), db =>
                 //    db.MigrationsAssembly("WebResume.DataAccess")
                 //    ));
-                        options.UseSqlServer(
-                Configuration.GetConnectionString("DefaultConnection")
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")
                 ));
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
